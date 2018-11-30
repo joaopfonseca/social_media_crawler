@@ -143,7 +143,7 @@ social_media_crawler/
 ## Authors
 This project was conducted as part of Data Science for Social Good 2018 (DSSG) fellowship, as well as part of João Fonseca's Master thesis for Nova School of Business and Economics' Masters in Management Double Degree program with Nova Information Management School's Master in Information Management (with specialisation in **Digital Business** and **Knowledge Management and Business Intelligence**, respectively).
 
-**Researcher**: João Fonseca
+**Developer**: João Fonseca
 
 **Technical Mentor**: Qiwei Han
 
