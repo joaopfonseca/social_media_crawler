@@ -1,0 +1,164 @@
+
+
+{% extends "header.html" %}
+{% block body %}
+
+
+
+  <body>
+    <div class="page-header">
+      <h1 align="center">{{ title }} </h1>
+      <div align="center" style="height: 10%;"> Here you can configure Keywords and manage data updates </div>
+    </div>
+  </body>
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+    <div class="col-sm" align="center">
+        <h4>Configure Keywords</h4>
+                <body>
+                  <div class="container" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <form class="form" method="post">
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text" style="width:110px">Keyword 1</div>
+                              </div>
+                              <input type="text" style="max-width:150px" name="keyword_1" class="form-control" id="inlineFormInputGroup" placeholder="Enter Keyword"
+                              value="{{ request.form.keyword_1 }}">
+                          </div>
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text" style="width:110px">Keyword 2</div>
+                              </div>
+                              <input style="max-width:150px" type="text" name="keyword_2" class="form-control" id="inlineFormInputGroup" placeholder="Enter Keyword"
+                              value="{{ request.form.keyword_2 }}">
+                          </div>
+                          <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text" style="width:110px">Keyword 3</div>
+                              </div>
+                              <input style="max-width:150px" type="text" name="keyword_3" class="form-control" id="inlineFormInputGroup" placeholder="Enter Keyword"
+                              value="{{ request.form.keyword_3 }}">
+                          </div>
+                          <button type="submit" style="width:260px" class="btn btn-secondary" value="Login">Submit</button>
+                      </form>
+                    </div>
+                </body>
+    </div>
+    <div class="col-sm" align="center">
+        <h4>Update Manager</h4>
+                    <div id="accordion" role="tablist">
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+                              {{ keyword_1 }}
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                              <form class="form" method="post">
+                                <button type="text" name="crawler" value="1" class="btn btn-outline-primary" style="width:100%">Launch batch crawler</button>
+                              </form>
+                            <div class="row">
+                              <div class="col-sm" align="center">
+                                    <form class="form" method="post">
+                                      <button type="text" name="facebook" value="1" class="btn btn-outline-secondary" style="width:100%">Update Facebook</button>
+                                    </form>
+                                    <form class="form" method="post">
+                                      <button type="text" name="instagram" value="1" class="btn btn-outline-secondary" style="width:100%">Update Instagram</button>
+                                    </form>
+                              </div>
+                              <div class="col-sm" align="center">
+                                    <form class="form" method="post">
+                                      <button type="text" name="twitter" value="1" class="btn btn-outline-secondary" style="width:100%">Update Twitter</button>
+                                    </form>
+                                    <form class="form" method="post">
+                                      <button type="text" name="ig_img" value="1" class="btn btn-outline-secondary" style="width:100%">Crawl Instagram Images</button>
+                                    </form>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                          <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                              {{ keyword_2 }}
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+
+                            <div class="row">
+                              <div class="col-sm" align="center">
+                                    <form class="form" method="post">
+                                      <button type="text" name="facebook" value="2" class="btn btn-outline-secondary" style="width:100%">Update Facebook</button>
+                                    </form>
+                                    <form class="form" method="post">
+                                      <button type="text" name="instagram" value="2" class="btn btn-outline-secondary" style="width:100%">Update Instagram</button>
+                                    </form>
+                              </div>
+                              <div class="col-sm" align="center">
+                                    <form class="form" method="post">
+                                      <button type="text" name="twitter" value="2" class="btn btn-outline-secondary" style="width:100%">Update Twitter</button>
+                                    </form>
+                                    <form class="form" method="post">
+                                      <button type="text" name="ig_img" value="2" class="btn btn-outline-secondary" style="width:100%">Crawl Instagram Images</button>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                          <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                              {{ keyword_3 }}
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+
+                            <div class="row">
+                              <div class="col-sm" align="center">
+                                    <form class="form" method="post">
+                                      <button type="text" name="facebook" value="3" class="btn btn-outline-secondary" style="width:100%">Update Facebook</button>
+                                    </form>
+                                    <form class="form" method="post">
+                                      <button type="text" name="instagram" value="3" class="btn btn-outline-secondary" style="width:100%">Update Instagram</button>
+                                    </form>
+                              </div>
+                              <div class="col-sm" align="center">
+                                    <form class="form" method="post">
+                                      <button type="text" name="twitter" value="3" class="btn btn-outline-secondary" style="width:100%">Update Twitter</button>
+                                    </form>
+                                    <form class="form" method="post">
+                                      <button type="text" name="ig_img" value="3" class="btn btn-outline-secondary" style="width:100%">Crawl Instagram Images</button>
+                                    </form>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    </div>
+</div>
+
+
+{% endblock %}
