@@ -148,5 +148,3 @@ This project was conducted as part of Data Science for Social Good 2018 (DSSG) f
 **Technical Mentor**: Qiwei Han
 
 **Project/Thesis Advisor**: Professors Leid Zejnilović and Miguel Neto
-
-**Project Manager**: Stijn Depla
