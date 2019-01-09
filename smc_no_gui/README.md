@@ -45,7 +45,8 @@ The program is divided in 4 parts: collection of data in a batch and updating ex
 Start by running the script `smc_no_gui.py`. Two arguments are required: `-creds_id` and `-keyword`:
 - `creds_id`: ID (number) of the set of credentials to use. You can update this list in the file `creds.py`
 - `-keyword`: Keyword to crawl
-<br></br>
+
+
 **Example:** `python path_to_project_folder/smc_no_gui.py -creds_id 1 -keyword cascais`
 <br>
 That's it! The program will run continuously unless interrupted with scheduled updates and store the data in the folder `data`.
