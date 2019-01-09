@@ -70,6 +70,7 @@ smc_no_gui
 ├── README.md
 ├── creds.py
 ├── data
+├── requirements.txt
 ├── smc_no_gui.py
 └── src
     ├── InstagramAPI
