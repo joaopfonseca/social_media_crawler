@@ -13,8 +13,6 @@ Fork a copy of this repository onto your own GitHub account and `clone` your for
 
 `git clone https://github.com/<your_github_username>/social_media_crawler.git`
 
-(Currently this is a private repo, so this should not work unless you have access to the GitHub page)
-
 
 #### Installing Python and setting up the virtual environment
 [Install Python 3.6.3](https://www.python.org/downloads/release/python-363/) and the [conda package manager](https://conda.io/miniconda.html) (use miniconda, not anaconda, because we will install all the packages we need).
@@ -141,7 +139,7 @@ social_media_crawler/
 ```
 
 ## Authors
-This project was conducted as part of Data Science for Social Good 2018 (DSSG) fellowship, as well as part of João Fonseca's Master thesis for Nova School of Business and Economics' Masters in Management Double Degree program with Nova Information Management School's Master in Information Management (with specialisation in **Digital Business** and **Knowledge Management and Business Intelligence**, respectively).
+This project was conducted as part of a Data Science for Social Good (DSSG) project, as well as part of João Fonseca's Master thesis for Nova School of Business and Economics' Masters in Management Double Degree program with Nova Information Management School's Master in Information Management (with specialisation in **Digital Business** and **Knowledge Management and Business Intelligence**, respectively).
 
 **Developer**: João Fonseca
 
