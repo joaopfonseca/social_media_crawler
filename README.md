@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://image.ibb.co/fZ87Yb/project_header.png" width="100%"/>
+  <img src="project_header.png" width="100%"/>
 </p>
 The aim of the project is to build a program that is able to get publicly available data regarding a specific keyword from the three main Social Media platforms: Facebook, Instagram and Twitter.
 
